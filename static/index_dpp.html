@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Processos</title>
+</head>
+<body class="container">
+    <h2>Registrar Processo</h2>
+    <form id="processForm">                
+        <input type="text" id="processNumber" name="processNumber" placeholder="Número do Processo"><br>
+        
+        <select id="vara" name="vara">
+            <option value="Vara1">Vara1</option>
+            <option value="Vara2">Vara2</option>
+            <!-- ... outras opções ... -->
+        </select><br>
+
+        <div class="input-field">
+            <input type="text" class="cpf-cnpj" id="cpfCnpj" name="cpfCnpj" placeholder="CPF/CNPJ">
+            <label for="cpfCnpj">Digite o CPF ou CNPJ</label>
+            <div class="resultadoValidacao"></div> 
+        </div>
+        
+        <input type="submit" value="Enviar">
+    </form>
+    <h2>Processos Registrados</h2>
+    <ul id="processList"></ul>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/validacao.js"></script>
+    <script src="/static/js/script_dpp.js"></script>
+   
+  
+</body>
+</html>
